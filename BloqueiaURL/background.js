@@ -1,17 +1,18 @@
-
-document.addEventListener('DOMContentLoaded', function () {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        
         var urlAtual = tabs[0].url;
-        var urlFim = 'https://www.kabum.com.br/';
-        var urlOI = 'https://www.netflix.com/br/'
+        var urlOI =  'https://www.youtube.com';
+
         console.log(urlAtual);
-        console.log(urlFim);
+        console.log(urlOI);
+     
 
-        if (urlAtual === urlFim || urlAtual === urlOI) {
-            chrome.tabs.update(tabs[0].id, { url: chrome.runtime.getURL('pagina2.html') });
-
+        if (urlAtual == urlOI) {
+            chrome.tabs.update(tabs[0].id, { url: chrome.runtime.getURL('teste.html') });
         } else {
-            console.log('Não é igual');
+          console.log('erro')
         }
     });
-});
+
+
+//document.addEventListener('DOMContentLoaded', function () {});
