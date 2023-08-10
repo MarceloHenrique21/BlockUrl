@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Block site",
+  "version": "5.0.0",
+  "description": "Colocar senhas/bloquear sites",
+  "permissions": ["webRequest", "webRequestBlocking", "tabs", "storage", "<all_urls>"],
+  "background": {
+    "scripts": ["Js/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "html/TelaInicial.html"
+  }
+}
