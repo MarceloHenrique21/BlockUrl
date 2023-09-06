@@ -1,32 +1,48 @@
 /* Estilos para a página inicial da extensão */
+@font-face {
+    font-family: Lato;
+    src: url('https://fonts.googleapis.com/css?family=Lato');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Lato, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #EBF6F6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 300px;
+    height: 300px;
+    width: 250px;
 }
 
-input {
+#btnLogin {
+    font-family: Arial, sans-serif;
     border-radius: 10px;
     text-align: center;
-    padding: 10px;
-    background-color: rgb(1, 175, 255);
+    padding: 10px 65px;
+    font-size: 21px;
+    color: white;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #3282B8, #5FA8FF);
     align-items: center;
+    border: 0;
 }
 
-input::placeholder {
-    color: white;
-    font-size: 25px;
+#btnCadastrar {
+    border-radius: 10px;
     text-align: center;
+    font-size: 21px;
+    padding: 10px 25px;
+    color: white;
+    align-items: center;
+    border: 0;
+    background: linear-gradient(to right, #3282B8, #5FA8FF);
 }
 
 span {
+    margin-top: 10px;
     color: #3282B8;
     text-align: center;
 }
