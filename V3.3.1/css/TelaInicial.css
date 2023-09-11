@@ -1,11 +1,8 @@
 /* Estilos para a página inicial da extensão */
-@font-face {
-    font-family: Lato;
-    src: url('https://fonts.googleapis.com/css?family=Lato');
-}
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 body {
-    font-family: Lato, Arial, sans-serif;
+    font-family: 'lato', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #EBF6F6;
@@ -18,19 +15,23 @@ body {
 }
 
 #btnLogin {
-    font-family: Arial, sans-serif;
+    cursor: pointer;
+    font-family: 'lato', Arial, sans-serif;
     border-radius: 10px;
     text-align: center;
     padding: 10px 65px;
     font-size: 21px;
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
     background: linear-gradient(to right, #3282B8, #5FA8FF);
     align-items: center;
     border: 0;
 }
 
 #btnCadastrar {
+    cursor: pointer;
+    font-family: 'lato', Arial, sans-serif;
     border-radius: 10px;
     text-align: center;
     font-size: 21px;

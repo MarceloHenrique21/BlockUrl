@@ -5,15 +5,15 @@
     <link rel="stylesheet" href="/css/TelaCadastro.css">
 </head>
 <body>
-    <h1>Cadastro</h1>
-    <form id="cadastroForm">
-        <select name="Contato" id="contatoSelect">
+    <h1>REGISTRAR-SE</h1>
+    <form id="formCadastro">
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" required><br>
+        <select name="Contato" id="tipoContato">
             <option value="" selected>Escolha uma opcao</option>
             <option value="Email">Email</option>
             <option value="Telefone">Telefone</option>
         </select>
-        <label for="dataNascimento">Data de Nascimento:</label>
-        <input type="date" id="dataNascimento" required><br>
         <label for="senha">Senha:</label>
         <input type="password" id="senha" required><br>
         <div id="campoContato" style="display:none;">
