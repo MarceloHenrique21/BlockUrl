@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const contatoSelect = document.getElementById("contatoSelect");
+    const contatoSelect = document.getElementById("tipoContato");
     const campoContato = document.getElementById("campoContato");
     const campoEmail = document.getElementById("campoEmail");
     const contatoInput = document.getElementById("contato");
@@ -15,14 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
             campoContato.style.display = "block";
             campoEmail.style.display = "none";
             contatoInput.placeholder = "(00) 0 0000 0000";
-
-        } 
-            else if (contatoSelect.value === "Email") {
+        } else if (contatoSelect.value === "Email") {
                 campoContato.style.display = "none";
                 campoEmail.style.display = "block";
                 emailInput.placeholder = "Digite o email";
-        } 
-            else {
+        } else {
                 campoContato.style.display = "none";
                 campoEmail.style.display = "none";
         }
@@ -51,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Verificar se a pessoa tem pelo menos 18 anos
         if (idade >= 18) {
-            alert("A criança deve ser menor de idade");
+            alert("O monitorado não pode ter idade maior ou igual a 18 anos!");
         } else {
             const data = {
                 contato: contatoSelect.value === "Email" ? emailInput.value : contatoInput.value,

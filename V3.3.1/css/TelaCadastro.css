@@ -1,21 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'lato', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #EBF6F6;
+    width: 300px;
 }
 
 h1 {
     text-align: center;
-    padding: 20px;
+    padding-top: 10px;
+    margin: 10px 0 5px 0;
+    background-image: linear-gradient(to top, rgba(15, 76, 117, 1), rgba(50, 130, 184, 0.13));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 form {
-    background-color: #fff;
-    width: 500px;
-    margin: 0 auto;
+    width: 78%;
+    margin: 0;
     padding: 20px;
-    border-radius: 5px;
 }
 
 label {
@@ -24,29 +31,57 @@ label {
 }
 
 input[type="number"],
-input[type="text"],
+input[type="date"],
 input[type="password"],
 input[type="email"] {
-    width: 100%;
+    width: 240px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 50rem;
+}
+
+input[type="date"] {
+    margin-top: 6px;
+    width: 240px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50rem;
 }
 
 select {
-    width: 100%;
+    width: 262px;
     padding: 10px;
+    margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 50rem;
 }
 
+select option {
+    border-radius: 50rem;
+}
+
+
 button[type="submit"] {
+    margin-top: 10px;
+    width: 254px;
+    padding: 10px;
     background-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #3282B8, #5FA8FF);
+}
+
+span {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #3282B8;
+    text-align: center;
 }

@@ -5,27 +5,31 @@
     <link rel="stylesheet" href="/css/TelaCadastro.css">
 </head>
 <body>
-    <h1>REGISTRAR-SE</h1>
+    <h1>Cadastre-se</h1>
     <form id="formCadastro">
-        <label for="dataNascimento">Data de Nascimento:</label>
+        <label for="dataNascimento">Qual a idade do seu filho/monitorado?</label>
         <input type="date" id="dataNascimento" required><br>
+        <label for="tipoContato">Como podemos te comunicar?</label>
         <select name="Contato" id="tipoContato">
             <option value="" selected>Escolha uma opcao</option>
             <option value="Email">Email</option>
             <option value="Telefone">Telefone</option>
         </select>
         <label for="senha">Senha:</label>
-        <input type="password" id="senha" required><br>
+        <input type="password" id="senha" disabled required><br>
         <div id="campoContato" style="display:none;">
-            <label for="contato">Contato:</label>
+            <label for="contato">Telefone:</label>
             <input type="text" id="contato" placeholder="Digite o telefone">
         </div>
         <div id="campoEmail" style="display:none;">
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Digite o email">
         </div>
-        <button type="submit">Criar</button>
+        <button type="submit">CADASTRAR</button>
     </form>
+    <div>
+        <span>Ir pro Login</span>
+    </div>
     <script src="/Js/TelaCadastro.js"></script>
 </body>
 </html>
